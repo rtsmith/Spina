@@ -5,7 +5,7 @@ module Spina
     has_one :structure_part, as: :structure_partable
 
     def content
-      I18n.t(['options',part.name,value].compact.join('.'))
+      value
     end
 
     private
